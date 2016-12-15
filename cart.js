@@ -15,7 +15,7 @@
     totalCart(){
     let total = 0;
     for(var i=0;i < quantity.length;i++){
-      total += this.itemList[i] x this.itemQuantity[i]
+      total += this.itemList[i].price * this.itemQuantity[i]
     }
     return total;
   }
@@ -23,8 +23,8 @@
 
    subCart(days){
     let subArray =[]
-    if (Item.shippingTime == day){
-      subArray.push(Item.name);
+    if (this.itemList[i].shippingTime == day){
+      subArray.push(this.item[i]);
     }
     return subArray;
   }
