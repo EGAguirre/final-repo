@@ -16,6 +16,8 @@ validPublicKey(){
   }
 }
 
+
+
 validPrivateKey(){
     if(this.privateKey[4]="-" && this.privateKey[9]="-"){
       return true;
@@ -25,18 +27,18 @@ validPrivateKey(){
     }
 
     static makePrivateKey(){
-      let key = [];
+      let key = "";
       let limit = 14;
 
       for(var i=0, i<14, i++){
         if (!i==4 && !==9){
-          password.push(Math.floor(Math.Random()*10));
+          key= key+String(Math.floor(Math.Random()*10)));
       }
       else{
-        password.push("-")
+        key = key +"-"
       }
   }
-  return passowrd
+  return password;
 }
 
 
